@@ -1,25 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  getDefaultStartAndEndDate,
+  getDateRangeData,
+  getDateDataMapping,
+  DateFormatMask
+} from "./helpers";
+import * as data from "./data.json";
+import dateFormat from "dateformat";
 
 function App() {
+  const { items } = data;
+
+  const displayDateRange = () => {
+    const dateRange = getDefaultStartAndEndDate("2019-03-01");
+    const dateRangeData = getDateRangeData(
+      dateRange.startDate,
+      dateRange.endDate,
+      items
+    );
+
+    return `Startdate: ${dateRange.startDate}, Enddate: ${dateRange.endDate}`;
+  };
+
+  const displayData = () => {
+    const itemsMapping = getDateDataMapping(items);
+    return (
+      <>
+        <ul>
+          {items.map((d, i) => (
+            <li key={i}>
+              {`[${dateFormat(d.workspaceSettlementDate, DateFormatMask)}]`}:{" "}
+              {d.count}
+            </li>
+          ))}
+        </ul>
+      </>
+    );
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">Dashboard calendar</div>
+      {displayDateRange()}
+      {displayData()}
+    </>
   );
 }
 

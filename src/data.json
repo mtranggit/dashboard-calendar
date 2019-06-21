@@ -1,0 +1,60 @@
+{
+    "items": [
+      {
+        "workspaceSettlementDate": "2019-02-28T00:00:00.000+00:00",
+        "count": 115
+      },
+      {
+        "workspaceSettlementDate": "2019-03-01T00:00:00.000+00:00",
+        "count": 16
+      },
+      {
+        "workspaceSettlementDate": "2019-03-05T00:00:00.000+00:00",
+        "count": 3
+      },
+      {
+        "workspaceSettlementDate": "2019-03-06T00:00:00.000+00:00",
+        "count": 3
+      },
+      {
+        "workspaceSettlementDate": "2019-03-07T00:00:00.000+00:00",
+        "count": 9
+      },
+      {
+        "workspaceSettlementDate": "2019-03-08T00:00:00.000+00:00",
+        "count": 10
+      },
+      {
+        "workspaceSettlementDate": "2019-03-11T00:00:00.000+00:00",
+        "count": 4
+      },
+      {
+        "workspaceSettlementDate": "2019-03-12T00:00:00.000+00:00",
+        "count": 2
+      },
+      {
+        "workspaceSettlementDate": "2019-03-13T00:00:00.000+00:00",
+        "count": 6
+      },
+      {
+        "workspaceSettlementDate": "2019-03-14T00:00:00.000+00:00",
+        "count": 8
+      },
+      {
+        "workspaceSettlementDate": "2019-03-15T00:00:00.000+00:00",
+        "count": 10
+      },
+      {
+        "workspaceSettlementDate": "2019-03-18T00:00:00.000+00:00",
+        "count": 1
+      },
+      {
+        "workspaceSettlementDate": "2019-03-19T00:00:00.000+00:00",
+        "count": 21
+      },
+      {
+        "workspaceSettlementDate": "2019-03-20T00:00:00.000+00:00",
+        "count": 16
+      }
+    ]
+  }
